@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Tamanho das telas.-->
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title> NodeProp - Especializada em Soluções Digitais</title>
+    <meta name="description" content="Agência especializada em Marketing Digital e Criação de Aplicativos Mobile">
+    <meta name="keywords" content="Agência digital, Marketing, Sites">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Gustavo Ferreira Alves">   <!--Autor do site.-->
+    <link rel="stylesheet" href="css/style.css">            <!--Ligação com a pasta style.css.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--Acesso aos ícones do site FONTAWESOME.-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">                 <!--Familia de fontes a ser usada (Google Font).-->
+    <link rel="icon" href="imagens/logo.png">                 <!--Ícone (FontAwesome)-->
+</head>
+<body>
+    <header class="cabecalho">
+        <!--Criando o logotipo.-->
+    <a href="index.html"><h1 class="logo" NodeProp - Especializada em Soluções Digitais></h1></a>
+    <!--Criando o botão para o menu(ícone). 'fa-lg': aumenta o tamanho do ícone.-->
+    <button class="btn-menu"><i class="fa-solid fa-bars fa-lg"></i></button>
+    <nav class="menu">
+        <a class="btn-close"><i class="fa fa-times"></i></a> <!--Criação e estilização do botão "x" para fechar o menu.-->
+        <ul> <!--Criando o menu.-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul> 
+    </nav>
+    </header>
+    <!--Criando um banner.-->
+    <div class="banner">
+        <div class="title">
+            <h2>OUSE INOVAR</h2>
+            <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</h3>
+        </div>
+        <div class="buttons">   <!--Criando botões.-->
+            <button class="btn-cadastrar">Cadastrar <i class="fa fa-arrow-circle-right"></i></button>   <!--Eeta no botão.-->
+            <button class="btn-sobre">Sobre <i class="fa fa-question-circle"></i></button>              <!--Interrogação no botão.-->
+        </div>
+    </div>
+    <!--Adicionando Serviços.-->
+    <main class="servicos">
+        <article class="servico">
+            <a href="#">
+                <img src="imagens/pessoas_escritorio1.jpg" alt="Pessoas trabalhando no escritório 1.">  <!--1ª imagem-->
+            </a>
+            <div class="inner"> <!--Inserindo textos.-->
+                <a href="#">Campanhas Publicitárias</a>
+                <h4>Impressos, VTs e Jingles</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore molestiae harum cupiditate itaque alias? Quam, totam eum laudantium dicta quae esse natus enim delectus iure perspiciatis sit maxime temporibus!</p>
+            </div>
+        </article>
+        <!--Marketing Digital-->
+        <article class="servico">
+            <a href="#">
+                <img src="imagens/pessoas_escritorio2.jpg" alt="Pessoas trabalhando no escritório 2.">  <!--2ª imagem-->
+            </a>
+            <div class="inner"> <!--Inserindo textos.-->
+                <a href="#">Marketing Digital</a>
+                <h4>Administração de Redes Sociais</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore molestiae harum cupiditate itaque alias? Quam, totam eum laudantium dicta quae esse natus enim delectus iure perspiciatis sit maxime temporibus!</p>
+            </div>
+        </article>
+        <!--Criação de Sites.-->
+        <article class="servico">
+            <a href="#">
+                <img src="imagens/pessoas_escritorio3.jpg" alt="Pessoas trabalhando no escritório 3.">  <!--3ª imagem-->
+            </a>
+            <div class="inner"> <!--Inserindo textos.-->
+                <a href="#">Criação de Sites</a>
+                <h4>Sites Administráveis</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore molestiae harum cupiditate itaque alias? Quam, totam eum laudantium dicta quae esse natus enim delectus iure perspiciatis sit maxime temporibus!</p>
+            </div>
+        </article>
+    </main>
+    <!--Newsletter-->
+    <section class="newsletter">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba novidades, dicas e muito mais!</h3>
+        <!--Criando um formulário-->
+        <form>
+            <input type="email" placeholder="Seu email">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div class="social-icons">
+            <!--Icones obtidos no site https://fontawesome.com/-->
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright ShadowTech 2024. Todos os direitos reservados.
+        </p>
+    </footer>
+    <!--Jquery-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> <!--Exibição e ocultação do menu.-->
+    <script> 
+        $(".btn-menu").click(function() {$(".menu").show();})   
+        $(".btn-close").click(function() {$(".menu").hide();}) 
+    </script>
+</body>
+</html>
